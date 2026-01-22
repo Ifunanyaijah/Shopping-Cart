@@ -6,7 +6,7 @@ import ShowCourseComponent from './ShowCoursecomponent.jsx';
 import sportsJacket from './assets/IMG_1819.PNG';
 import tweedJacket from './assets/IMG_5915.JPG';
 import twopiece from './assets/IMG_5918.JPG';
-
+//comments are for study and remembering when reading through coding
 //STATE means data that can change, when the setcourses is called, 
 // it updaes with new value, inside the usestate is the initial value
 
@@ -21,13 +21,13 @@ function App() {
     },
     {
       id: 2,
-      name: 'tweed jacket',
+      name: '2 piece set',
       price: 5000,
       image: tweedJacket
     },
     {
       id: 3,
-      name: '2-piece set',
+      name: 'Tweed set',
       price: 9000,
       image: twopiece
     }
