@@ -1,4 +1,4 @@
-//components/UserCartComponent.js
+
 
 import React from 'react';
 
@@ -8,7 +8,7 @@ function UserCartComponent({
   totalAmountCalculationFunction,
   setCartCourses,
 }) {
-  
+  //COMMENTS FOR ME TO READ THROUGH THE CODE FOR STUDY AND PRACTICE
   // Handle quantity increment
   const handleIncrement = (productId) => {
     setCartCourses((prevCartCourses) =>
@@ -27,10 +27,8 @@ function UserCartComponent({
         if (item.product.id === productId) {
           const newQuantity = Math.max(item.quantity - 1, 0);
           if (newQuantity === 0) {
-            // Option 1: Remove item when quantity reaches 0
-            // This would need to be handled by parent component or
-            // call deleteCourseFromCartFunction here
-            return item; // Keep for now, but quantity will be 0
+           
+            return item; 
           }
           return { ...item, quantity: newQuantity };
         }
@@ -53,7 +51,7 @@ function UserCartComponent({
       {cartCourses.length === 0 ? (
         <p className="empty-cart">Geek, your cart is empty.</p>
       ) : ( //checks if anything is in cart with length=0, 
-      // if cart has items then active for css stylong for empty or full cart
+      // if cart has items then active for css styling for empty or full cart
         <div className="cart-content">
           <ul className="cart-items-list">
             {cartCourses.map((item) => {
@@ -88,7 +86,7 @@ function UserCartComponent({
                           className="remove-button"
                           onClick={() => deleteCourseFromCartFunction(item.product)}
                         >
-                          Remove Product
+                          Remove
                         </button>
                         <div className="quantity-control">
                           <button 
