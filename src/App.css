@@ -1,5 +1,139 @@
 
 /* App.css */
+/*fixing it to be responsive*/
+
+@media screen and (max-width: 480px) {
+    .App-main {
+        padding: 10px;
+    }
+
+    .search-bar {
+        max-width: 100%;
+        margin: 0 10px;
+    }
+
+    .search-bar input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .product-list {
+        flex-direction: column;
+        gap: 15px;
+        padding-bottom: 15px;
+    }
+
+    .product {
+        width: 100%;
+        padding: 15px 20px;
+        border-radius: 20px;
+        box-sizing: border-box;
+    }
+
+    .product img {
+        max-width: 120px;
+    }
+
+    .product h2 {
+        font-size: 1.3rem;
+    }
+
+    .product p {
+        font-size: 1rem;
+    }
+
+    .cart {
+        min-width: unset;
+        width: 100%;
+        margin-top: 20px;
+        padding: 15px;
+        box-sizing: border-box;
+        position: static;
+    }
+
+    .cart h2 {
+        font-size: 1.5rem;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cart-item .item-image img {
+        max-width: 70px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .cart-item .item-details {
+        width: 100%;
+    }
+
+    .cart-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .cart-item p {
+        font-size: 1rem;
+    }
+
+    .cart-item .item-actions {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .cart-item .item-actions button {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+        margin-left: 0;
+    }
+
+    .cart-item .quantity {
+        margin-left: 0;
+    }
+
+    .item-info {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .item-details {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .add-to-cart-button {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+
+    .checkout-section {
+        float: none;
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .cart .total {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .cart .checkout-button {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .no-results,
+    .empty-cart,
+    .checkout-message {
+        font-size: 1.2rem;
+    }
+}
+
 body {
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
