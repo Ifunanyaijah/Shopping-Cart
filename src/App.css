@@ -25,7 +25,7 @@
     }
 
     .product {
-        
+        max-width: 250px;
         width: 100%;
         padding: 15px 20px;
         border-radius: 20px;
