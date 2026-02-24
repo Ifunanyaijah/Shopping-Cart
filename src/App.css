@@ -217,7 +217,7 @@ body {
     background-color: rgb(255, 245, 245);
     border: 1px solid #f068ac;
     border-radius: 10%;
-    padding: 10px 60px;
+    padding: 10px 15px;
     text-align: center;
     width: 33%;
     transition: transform 0.2s ease-in-out;
