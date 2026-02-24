@@ -26,7 +26,7 @@
 
     .product {
         max-width: 260px;
-        width: 100%;
+        
         padding: 15px 20px;
         border-radius: 20px;
         box-sizing: border-box;
@@ -36,7 +36,7 @@
     .product img {
         max-width: 160px;
 
-        
+        width: 100%;
     }
 
     .product h2 {
