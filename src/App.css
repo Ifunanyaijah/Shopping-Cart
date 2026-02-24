@@ -1,6 +1,6 @@
 
 /* App.css */
-/*fixing it to be responsive*/
+/*fixing it to be responsive, update: lol the problem was in the base query not the media query*/
 
 @media screen and (max-width: 480px) {
     .App-main {
@@ -39,11 +39,11 @@
 
     
     .product img {
-        max-width: 200px;      /* <-- was 160px */
-        width: 70%;            /* <-- responsive width */
+        max-width: 200px;      
+        width: 70%;            
         height: auto;
         display: block;
-        margin: 0 auto 10px;   /* <-- centers the image */
+        margin: 0 auto 10px;   
     }
 
     .product h2 {
@@ -54,7 +54,7 @@
         font-size: 1rem;
     }
 
-    /* ✅ FIX: Make Add to Cart button full-width and readable */
+    
     .add-to-cart-button {
         width: auto;
         padding: 10px;
